@@ -1,0 +1,237 @@
+/* the styles for the elements 
+
+/*reset selector for 5.8*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 160px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li.current a {
+	color: yellow;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+	
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 800px;  /* chapter 6-1 step 5 */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420; 
+	background-color: #fffded; /* step 5.2 */
+}
+
+section {
+	width: 525px;
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+
+
+/* the styles for the header */
+header {  /*5.9*/
+	padding-top: 1.5em;
+	padding-bottom: 2em; 
+}
+	
+header img {
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*these are from step 5*/
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	/* text-indent: 30px; */ /*5.9 requests this */
+	
+	
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	/* text-indent: 30%; */ /*5.9 requests this */
+}
+header span {
+	color: #800000;
+text-shadow: 4px 4px;}
+
+header {
+	border-bottom: 3px solid #931420;
+	background-image: -webkit-linear-gradient ( 
+	30 deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%) ;
+}
+
+
+
+
+
+/* the styles for the section */
+
+	
+ 
+/*step 7*/
+
+ section h1 {   /*5.11 69-104*/
+	font-size: 150%;
+	padding-bottom: .25em;
+	padding-top: .5em;
+	margin-top: 0;
+	margin-bottom: 0;
+} 
+
+section {
+	font-size: 130%;
+	 color: #800000;
+	/* border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420; */
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+section {
+	padding-bottom: .5em;
+}
+section {
+	padding-left: 2em;
+	padding-right: 2em;
+	font: italicize;
+}
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+ 
+
+article {
+	color: #800000;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+	padding-bottom: .5em;
+	padding-top: .5em;
+}
+
+article img {
+	border: 1px solid;
+	float: right;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article p {
+	padding-right: .25em;
+}
+
+/*link directions 10*/
+a:link {    /* psuedo selector */
+	color: red;
+	
+}
+
+a:hover, a:focus {   /* psuedo selector */
+	color: purple;
+	
+}
+a:link {
+	font-style: italic;
+}
+a {
+	padding-bottom: .25em;
+}
+
+	
+
+/* the styles for the footer */
+#copyright{  /*id selector */
+		text-align: center;
+}
+footer {
+	background-color: #931420;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	clear: both;
+
+}
